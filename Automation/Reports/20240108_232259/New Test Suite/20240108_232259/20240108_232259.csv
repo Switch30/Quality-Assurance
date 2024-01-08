@@ -1,0 +1,43 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,Chrome 120.0.0.0,,,2024-01-08 23:23:10,2024-01-08 23:24:29,1m - 19.431s,PASSED
+,,,,,,,
+Test Cases/TC-001_Login - valid data,Chrome 120.0.0.0,,,2024-01-08 23:23:10,2024-01-08 23:23:23,12.213s,PASSED
+"openBrowser("""")",Chrome 120.0.0.0,,,2024-01-08 23:23:11,2024-01-08 23:23:14,3.008s,PASSED
+"navigateToUrl(""https://www.saucedemo.com/"")",Chrome 120.0.0.0,,,2024-01-08 23:23:14,2024-01-08 23:23:19,5.365s,PASSED
+"setText(findTestObject(""Object Repository/Login Page/input_username""), ""standard_user"")",Chrome 120.0.0.0,,,2024-01-08 23:23:19,2024-01-08 23:23:21,1.711s,PASSED
+"setText(findTestObject(""Object Repository/Login Page/input_pass""), ""secret_sauce"")",Chrome 120.0.0.0,,,2024-01-08 23:23:21,2024-01-08 23:23:22,0.740s,PASSED
+"click(findTestObject(""Object Repository/Login Page/btn_login""))",Chrome 120.0.0.0,,,2024-01-08 23:23:22,2024-01-08 23:23:22,0.475s,PASSED
+"assert verifyElementVisible(findTestObject(""Object Repository/Dashboard/web_header"")) == true : ""Login Success""",Chrome 120.0.0.0,,,2024-01-08 23:23:22,2024-01-08 23:23:23,0.432s,PASSED
+,,,,,,,
+Test Cases/TC-002_Login - invalid data,Chrome 120.0.0.0,,,2024-01-08 23:23:23,2024-01-08 23:23:37,14.176s,PASSED
+"callTestCase(findTestCase(""TC-001_Login - valid data""), [:], STOP_ON_FAILURE)",Chrome 120.0.0.0,,,2024-01-08 23:23:23,2024-01-08 23:23:35,12.122s,PASSED
+closeBrowser(),Chrome 120.0.0.0,,,2024-01-08 23:23:35,2024-01-08 23:23:37,1.635s,PASSED
+,,,,,,,
+Test Cases/TC-003_Sort Products,Chrome 120.0.0.0,,,2024-01-08 23:23:37,2024-01-08 23:23:49,11.945s,PASSED
+"callTestCase(findTestCase(""TC-001_Login - valid data""), [:], STOP_ON_FAILURE)",Chrome 120.0.0.0,,,2024-01-08 23:23:37,2024-01-08 23:23:46,9.096s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Dashboard/select_sort""), ""za"", false)",Chrome 120.0.0.0,,,2024-01-08 23:23:46,2024-01-08 23:23:47,0.851s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Dashboard/select_sort""), ""lohi"", false)",Chrome 120.0.0.0,,,2024-01-08 23:23:47,2024-01-08 23:23:48,0.813s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/Dashboard/select_sort""), ""hilo"", false)",Chrome 120.0.0.0,,,2024-01-08 23:23:48,2024-01-08 23:23:49,0.794s,PASSED
+,,,,,,,
+Test Cases/TC-004_View Product Details,Chrome 120.0.0.0,,,2024-01-08 23:23:49,2024-01-08 23:24:01,12.013s,PASSED
+"callTestCase(findTestCase(""TC-001_Login - valid data""), [:], STOP_ON_FAILURE)",Chrome 120.0.0.0,,,2024-01-08 23:23:49,2024-01-08 23:24:00,10.595s,PASSED
+"click(findTestObject(""Object Repository/Dashboard/item_1""))",Chrome 120.0.0.0,,,2024-01-08 23:24:00,2024-01-08 23:24:00,0.517s,PASSED
+"assert verifyElementVisible(findTestObject(""Object Repository/Dashboard/text_price"")) == true",Chrome 120.0.0.0,,,2024-01-08 23:24:00,2024-01-08 23:24:01,0.509s,PASSED
+,,,,,,,
+Test Cases/TC-005_Add Product to Shopping Cart,Chrome 120.0.0.0,,,2024-01-08 23:24:01,2024-01-08 23:24:13,12.575s,PASSED
+"callTestCase(findTestCase(""TC-001_Login - valid data""), [:], STOP_ON_FAILURE)",Chrome 120.0.0.0,,,2024-01-08 23:24:01,2024-01-08 23:24:12,10.640s,PASSED
+"click(findTestObject(""Object Repository/Dashboard/btn_Add to cart""))",Chrome 120.0.0.0,,,2024-01-08 23:24:12,2024-01-08 23:24:12,0.501s,PASSED
+"click(findTestObject(""Object Repository/Dashboard/icon_cart""))",Chrome 120.0.0.0,,,2024-01-08 23:24:12,2024-01-08 23:24:13,0.505s,PASSED
+"assert verifyElementVisible(findTestObject(""Object Repository/Dashboard/text_Your Cart"")) == true",Chrome 120.0.0.0,,,2024-01-08 23:24:13,2024-01-08 23:24:13,0.502s,PASSED
+,,,,,,,
+Test Cases/TC-006_Checkout Process for Products,Chrome 120.0.0.0,,,2024-01-08 23:24:13,2024-01-08 23:24:29,16.140s,PASSED
+"callTestCase(findTestCase(""TC-001_Login - valid data""), [:], STOP_ON_FAILURE)",Chrome 120.0.0.0,,,2024-01-08 23:24:14,2024-01-08 23:24:24,10.172s,PASSED
+"click(findTestObject(""Object Repository/Dashboard/btn_Add to cart""))",Chrome 120.0.0.0,,,2024-01-08 23:24:24,2024-01-08 23:24:24,0.535s,PASSED
+"click(findTestObject(""Object Repository/Dashboard/icon_cart""))",Chrome 120.0.0.0,,,2024-01-08 23:24:24,2024-01-08 23:24:25,0.501s,PASSED
+"click(findTestObject(""Object Repository/Dashboard/btn_Checkout""))",Chrome 120.0.0.0,,,2024-01-08 23:24:25,2024-01-08 23:24:25,0.509s,PASSED
+"setText(findTestObject(""Object Repository/Dashboard/input_firstName""), ""test"")",Chrome 120.0.0.0,,,2024-01-08 23:24:25,2024-01-08 23:24:26,0.816s,PASSED
+"setText(findTestObject(""Object Repository/Dashboard/input_lastName""), ""test"")",Chrome 120.0.0.0,,,2024-01-08 23:24:26,2024-01-08 23:24:27,0.815s,PASSED
+"setText(findTestObject(""Object Repository/Dashboard/input_postalCode""), ""123"")",Chrome 120.0.0.0,,,2024-01-08 23:24:27,2024-01-08 23:24:28,0.831s,PASSED
+"click(findTestObject(""Object Repository/Dashboard/input_Cancel_continue""))",Chrome 120.0.0.0,,,2024-01-08 23:24:28,2024-01-08 23:24:28,0.539s,PASSED
+"click(findTestObject(""Object Repository/Dashboard/btn_Finish""))",Chrome 120.0.0.0,,,2024-01-08 23:24:28,2024-01-08 23:24:29,0.500s,PASSED
+"assert verifyElementVisible(findTestObject(""Object Repository/Dashboard/text_Thank you for your order"")) == true",Chrome 120.0.0.0,,,2024-01-08 23:24:29,2024-01-08 23:24:29,0.493s,PASSED

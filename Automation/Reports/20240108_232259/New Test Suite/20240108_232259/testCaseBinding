@@ -1,0 +1,6 @@
+{"testCaseName":"Test Cases/TC-001_Login - valid data","testCaseId":"Test Cases/TC-001_Login - valid data","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC-002_Login - invalid data","testCaseId":"Test Cases/TC-002_Login - invalid data","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC-003_Sort Products","testCaseId":"Test Cases/TC-003_Sort Products","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC-004_View Product Details","testCaseId":"Test Cases/TC-004_View Product Details","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC-005_Add Product to Shopping Cart","testCaseId":"Test Cases/TC-005_Add Product to Shopping Cart","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC-006_Checkout Process for Products","testCaseId":"Test Cases/TC-006_Checkout Process for Products","iterationVariableName":""}
