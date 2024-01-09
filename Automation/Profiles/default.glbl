@@ -4,4 +4,9 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://postman-rest-api-learner.glitch.me'</initValue>
+      <name>baseAPI</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
