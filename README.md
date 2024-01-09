@@ -14,4 +14,4 @@ The `automation` folder contains scripts developed using Katalon Studio. The aut
 
 ### 2. Documents
 
-The `documents` folder contains test cases that have been used for frontend automation in the `automation` folder.
+The `documents` folder contains test cases and bug report that related to the automation testing in the `automation` folder.
